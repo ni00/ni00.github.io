@@ -243,16 +243,12 @@
     
     
     
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81MjYxNS8yOTA5Mw==">
-    <noscript>
-        <div>
-            Unable to load Livere, please make sure your network can access.
-        </div>
-    </noscript>
-    </div>
+    
+    
+     
+    <div id="waline" class="waline_thread"></div>
 
-    
-    
+
 
 
     </div>
@@ -540,16 +536,28 @@
     
     
     
-    <script>
+
+    
+    
+
+    
+    
+     
+        <script>
         function loadComment() {
-            (function(d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') { return; }
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+            
+                new Waline({
+                el: '#waline',
+                path: location.pathname,
+                serverURL: 'https://waline.nixiaobai.com'
+            });
+            
+            
+            };
         }
     
         var runningOnBrowser = typeof window !== "undefined";
@@ -570,11 +578,9 @@
             }
         }, 1);
     </script>
+ 
 
-    
-    
 
-    
 
 
 
