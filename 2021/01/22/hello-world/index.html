@@ -71,6 +71,8 @@
     
 
      
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+ 
 
     <!-- custom head -->
 
@@ -115,7 +117,7 @@
 
 
          
-    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
             <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
         </svg>
@@ -155,7 +157,14 @@
  
         
     
-    
+     
+    <span id="busuanzi_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="busuanzi_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
 
 
  
@@ -184,23 +193,48 @@
     
     <div class="post__license">
         <p>
-            <strong>Author: </strong>倪小白
+            <strong>本文作者：</strong>倪小白
         </p>
         <p>
             <strong>
-                Permalink: 
+                本文链接：
             </strong>
             <a href="https://nixaiobai.com/2021/01/22/hello-world/">https://nixaiobai.com/2021/01/22/hello-world/</a>
         </p>
         
     </div>
  
-    <div class="post-footer__meta"><p>updated at 2021-01-28</p></div> 
+    <div class="post-footer__meta"><p>更新于 2021-01-28</p></div> 
     <div class="post-meta__cats"></div> 
 </article>
 
 
 
+
+    <div class="post__comments content-card" id="comment">
+        
+    <h4>评论</h4>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MjYxNS8yOTA5Mw==">
+    <noscript>
+        <div>
+            您所在的地区可能无法访问 Livere 评论系统，请切换网络环境再尝试。
+        </div>
+    </noscript>
+    </div>
+
+    
+    
+
+
+    </div>
 
 
 
@@ -211,7 +245,26 @@
 
 
     
-     
+    
+    
+        <span id="busuanzi_container_site_uv" hidden>
+            <span></span>
+            <span id="busuanzi_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>&amp;nbsp;&amp;nbsp;&amp;nbsp;|</span>
+            
+        </span>
+    
+    
+        <span id="busuanzi_container_site_pv" hidden>
+            <span></span>
+            <span id="busuanzi_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+ 
  
 
  
@@ -295,6 +348,57 @@
 
  
 
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+        function loadComment() {
+            (function(d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+    
+    
+
+    
 
 
 
