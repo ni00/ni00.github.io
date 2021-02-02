@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="https://i.nixiaobai.com/favicon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="https://i.nixiaobai.com/favicon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="https://i.nixiaobai.com/favicon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="https://i.nixiaobai.com/favicon/apple-touch-icon.png">
+    
+    
+        <link rel="mask-icon" href="https://i.nixiaobai.com/favicon/android-chrome-192x192.png">
+    
+
+
+    <!-- meta -->
+
+
+<title>APK权限大全 | 倪小白博客</title>
+
+
+    <meta name="keywords" content="Android">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="访问登记属性     android.permission.ACCESS_CHECKIN_PROPERTIES读取或写入登记check-in数据库属性表的权限   获取错略位置     android.permission.ACCESS_COARSE_LOCATION通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米   获取精确位置 android.per">
+<meta property="og:type" content="article">
+<meta property="og:title" content="APK权限大全">
+<meta property="og:url" content="https://www.nixaiobai.com/2020/01/06/apk/index.html">
+<meta property="og:site_name" content="倪小白博客">
+<meta property="og:description" content="访问登记属性     android.permission.ACCESS_CHECKIN_PROPERTIES读取或写入登记check-in数据库属性表的权限   获取错略位置     android.permission.ACCESS_COARSE_LOCATION通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米   获取精确位置 android.per">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-01-06T02:10:00.000Z">
+<meta property="article:modified_time" content="2021-02-02T10:13:55.133Z">
+<meta property="article:author" content="倪小白">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/androidstudio.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+        
+    
+
+    
+    
+
+     
+
+    <!-- custom head -->
+
+    
+        <meta http-equiv="x-dns-prefetch-control" content="on"> 
+    
+        <link rel="dns-prefetch" href="//i.nixiaobai.com"> 
+    
+        <link rel="dns-prefetch" href="//waline.nixiaobai.com"> 
+    
+        <link rel="dns-prefetch" href="//hm.baidu.com"> 
+    
+        <link rel="dns-prefetch" href="//lean.nixiaobai.com"> 
+    
+        <link rel="dns-prefetch" href="//img.t.sinajs.cn"> 
+    
+        <link rel="dns-prefetch" href="//cdn.jsdelivr.net"> 
+    
+        <link rel="dns-prefetch" href="//cdn.bootcdn.net"> 
+    
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="倪小白博客" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">NiXiaoBai&#39;s Blog</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/talk.html" class="navbar-menu button">说说</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+         
+    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/talk.html" class="dropdown-menu button">说说</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        APK权限大全
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2020/01/" class="post-meta__date button">2020-01-06</a>
+        
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
+        
+    </div>
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <ul>
+<li>访问登记属性    <blockquote>
+<p>android.permission.ACCESS_CHECKIN_PROPERTIES<br>读取或写入登记check-in数据库属性表的权限</p>
+</blockquote>
+</li>
+<li>获取错略位置    <blockquote>
+<p>android.permission.ACCESS_COARSE_LOCATION<br>通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米</p>
+</blockquote>
+</li>
+<li>获取精确位置<blockquote>
+<p>android.permission.ACCESS_FINE_LOCATION<br>通过GPS芯片接收卫星的定位信息，定位精度达10米以内</p>
+</blockquote>
+</li>
+<li>访问定位额外命令<blockquote>
+<p>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS<br>允许程序访问额外的定位提供者指令</p>
+</blockquote>
+</li>
+<li>获取模拟定位信息<blockquote>
+<p>android.permission.ACCESS_MOCK_LOCATION<br>获取模拟定位信息，一般用于帮助开发者调试应用</p>
+</blockquote>
+</li>
+<li>获取网络状态<blockquote>
+<p>android.permission.ACCESS_NETWORK_STATE<br>获取网络信息状态，如当前的网络连接是否有效</p>
+</blockquote>
+</li>
+<li>访问Surface Flinger<blockquote>
+<p>android.permission.ACCESS_SURFACE_FLINGER<br>Android平台上底层的图形显示支持，一般用于游戏或照相机预览界面和底层模式的屏幕截图</p>
+</blockquote>
+</li>
+<li>获取WiFi状态<blockquote>
+<p>android.permission.ACCESS_WIFI_STATE<br>获取当前WiFi接入的状态以及WLAN热点的信息</p>
+</blockquote>
+</li>
+<li>账户管理<blockquote>
+<p>android.permission.ACCOUNT_MANAGER<br>获取账户验证信息，主要为GMail账户信息，只有系统级进程才能访问的权限</p>
+</blockquote>
+</li>
+<li>验证账户<blockquote>
+<p>android.permission.AUTHENTICATE_ACCOUNTS<br>允许一个程序通过账户验证方式访问账户管理ACCOUNT_MANAGER相关信息</p>
+</blockquote>
+</li>
+<li>电量统计<blockquote>
+<p>android.permission.BATTERY_STATS<br>获取电池电量统计信息</p>
+</blockquote>
+</li>
+<li>绑定小插件<blockquote>
+<p>android.permission.BIND_APPWIDGET<br>允许一个程序告诉appWidget服务需要访问小插件的数据库，只有非常少的应用才用到此权限</p>
+</blockquote>
+</li>
+<li>绑定设备管理<blockquote>
+<p>android.permission.BIND_DEVICE_ADMIN<br>请求系统管理员接收者receiver，只有系统才能使用</p>
+</blockquote>
+</li>
+<li>绑定输入法<blockquote>
+<p>android.permission.BIND_INPUT_METHOD<br>请求InputMethodService服务，只有系统才能使用</p>
+</blockquote>
+</li>
+<li>绑定RemoteView<blockquote>
+<p>android.permission.BIND_REMOTEVIEWS<br>必须通过RemoteViewsService服务来请求，只有系统才能用</p>
+</blockquote>
+</li>
+<li>绑定壁纸<blockquote>
+<p>android.permission.BIND_WALLPAPER<br>必须通过WallpaperService服务来请求，只有系统才能用</p>
+</blockquote>
+</li>
+<li>使用蓝牙<blockquote>
+<p>android.permission.BLUETOOTH<br>允许程序连接配对过的蓝牙设备</p>
+</blockquote>
+</li>
+<li>蓝牙管理<blockquote>
+<p>android.permission.BLUETOOTH_ADMIN<br>允许程序进行发现和配对新的蓝牙设备</p>
+</blockquote>
+</li>
+<li>变成砖头<blockquote>
+<p>android.permission.BRICK<br>能够禁用手机，非常危险，顾名思义就是让手机变成砖头</p>
+</blockquote>
+</li>
+<li>应用删除时广播<blockquote>
+<p>android.permission.BROADCAST_PACKAGE_REMOVED<br>当一个应用在删除时触发一个广播</p>
+</blockquote>
+</li>
+<li>收到短信时广播<blockquote>
+<p>android.permission.BROADCAST_SMS<br>当收到短信时触发一个广播</p>
+</blockquote>
+</li>
+<li>连续广播<blockquote>
+<p>android.permission.BROADCAST_STICKY<br>允许一个程序收到广播后快速收到下一个广播</p>
+</blockquote>
+</li>
+<li>WAP PUSH广播<blockquote>
+<p>android.permission.BROADCAST_WAP_PUSH<br>WAP PUSH服务收到后触发一个广播</p>
+</blockquote>
+</li>
+<li>拨打电话<blockquote>
+<p>android.permission.CALL_PHONE<br>允许程序从非系统拨号器里输入电话号码</p>
+</blockquote>
+</li>
+<li>通话权限<blockquote>
+<p>android.permission.CALL_PRIVILEGED<br>允许程序拨打电话，替换系统的拨号器界面</p>
+</blockquote>
+</li>
+<li>拍照权限<blockquote>
+<p>android.permission.CAMERA<br>允许访问摄像头进行拍照</p>
+</blockquote>
+</li>
+<li>改变组件状态<blockquote>
+<p>android.permission.CHANGE_COMPONENT_ENABLED_STATE<br>改变组件是否启用状态</p>
+</blockquote>
+</li>
+<li>改变配置<blockquote>
+<p>android.permission.CHANGE_CONFIGURATION<br>允许当前应用改变配置，如定位</p>
+</blockquote>
+</li>
+<li>改变网络状态 <blockquote>
+<p>android.permission.CHANGE_NETWORK_STATE<br>改变网络状态如是否能联网</p>
+</blockquote>
+</li>
+<li>改变WiFi多播状态<blockquote>
+<p>android.permission.CHANGE_WIFI_MULTICAST_STATE<br>改变WiFi多播状态</p>
+</blockquote>
+</li>
+<li>改变WiFi状态<blockquote>
+<p>android.permission.CHANGE_WIFI_STATE<br>改变WiFi状态</p>
+</blockquote>
+</li>
+<li>清除应用缓存<blockquote>
+<p>android.permission.CLEAR_APP_CACHE<br>清除应用缓存</p>
+</blockquote>
+</li>
+<li>清除用户数据<blockquote>
+<p>android.permission.CLEAR_APP_USER_DATA<br>清除应用的用户数据</p>
+</blockquote>
+</li>
+<li>底层访问权限<blockquote>
+<p>android.permission.CWJ_GROUP<br>允许CWJ账户组访问底层信息</p>
+</blockquote>
+</li>
+<li>手机优化大师扩展权限<blockquote>
+<p>android.permission.CELL_PHONE_MASTER_EX<br>手机优化大师扩展权限</p>
+</blockquote>
+</li>
+<li>控制定位更新<blockquote>
+<p>android.permission.CONTROL_LOCATION_UPDATES<br>允许获得移动网络定位信息改变</p>
+</blockquote>
+</li>
+<li>删除缓存文件<blockquote>
+<p>android.permission.DELETE_CACHE_FILES<br>允许应用删除缓存文件</p>
+</blockquote>
+</li>
+<li>删除应用<blockquote>
+<p>android.permission.DELETE_PACKAGES<br>允许程序删除应用</p>
+</blockquote>
+</li>
+<li>电源管理<blockquote>
+<p>android.permission.DEVICE_POWER<br>允许访问底层电源管理</p>
+</blockquote>
+</li>
+<li>应用诊断<blockquote>
+<p>android.permission.DIAGNOSTIC<br>允许程序到RW到诊断资源</p>
+</blockquote>
+</li>
+<li>禁用键盘锁<blockquote>
+<p>android.permission.DISABLE_KEYGUARD<br>允许程序禁用键盘锁</p>
+</blockquote>
+</li>
+<li>转存系统信息<blockquote>
+<p>android.permission.DUMP<br>允许程序获取系统dump信息从系统服务</p>
+</blockquote>
+</li>
+<li>状态栏控制<blockquote>
+<p>android.permission.EXPAND_STATUS_BAR<br>允许程序扩展或收缩状态栏</p>
+</blockquote>
+</li>
+<li>工厂测试模式<blockquote>
+<p>android.permission.FACTORY_TEST<br>允许程序运行工厂测试模式</p>
+</blockquote>
+</li>
+<li>使用闪光灯<blockquote>
+<p>android.permission.FLASHLIGHT<br>允许访问闪光灯</p>
+</blockquote>
+</li>
+<li>强制后退<blockquote>
+<p>android.permission.FORCE_BACK<br>允许程序强制使用back后退按键，无论Activity是否在顶层</p>
+</blockquote>
+</li>
+<li>访问账户Gmail列表<blockquote>
+<p>android.permission.GET_ACCOUNTS<br>访问GMail账户列表</p>
+</blockquote>
+</li>
+<li>获取应用大小<blockquote>
+<p>android.permission.GET_PACKAGE_SIZE<br>获取应用的文件大小</p>
+</blockquote>
+</li>
+<li>获取任务信息<blockquote>
+<p>android.permission.GET_TASKS<br>允许程序获取当前或最近运行的应用</p>
+</blockquote>
+</li>
+<li>允许全局搜索<blockquote>
+<p>android.permission.GLOBAL_SEARCH<br>允许程序使用全局搜索功能</p>
+</blockquote>
+</li>
+<li>硬件测试<blockquote>
+<p>android.permission.HARDWARE_TEST<br>访问硬件辅助设备，用于硬件测试</p>
+</blockquote>
+</li>
+<li>注射事件<blockquote>
+<p>android.permission.INJECT_EVENTS<br>允许访问本程序的底层事件，获取按键、轨迹球的事件流</p>
+</blockquote>
+</li>
+<li>安装定位提供<blockquote>
+<p>android.permission.INSTALL_LOCATION_PROVIDER<br>安装定位提供</p>
+</blockquote>
+</li>
+<li>安装应用程序<blockquote>
+<p>android.permission.INSTALL_PACKAGES<br>允许程序安装应用</p>
+</blockquote>
+</li>
+<li>内部系统窗口<blockquote>
+<p>android.permission.INTERNAL_SYSTEM_WINDOW<br>允许程序打开内部窗口，不对第三方应用程序开放此权限</p>
+</blockquote>
+</li>
+<li>访问网络<blockquote>
+<p>android.permission.INTERNET<br>访问网络连接，可能产生GPRS流量</p>
+</blockquote>
+</li>
+<li>结束后台进程<blockquote>
+<p>android.permission.KILL_BACKGROUND_PROCESSES<br>允许程序调用killBackgroundProcesses(String).方法结束后台进程</p>
+</blockquote>
+</li>
+<li>管理账户<blockquote>
+<p>android.permission.MANAGE_ACCOUNTS<br>允许程序管理AccountManager中的账户列表</p>
+</blockquote>
+</li>
+<li>管理程序引用<blockquote>
+<p>android.permission.MANAGE_APP_TOKENS<br>管理创建、摧毁、Z轴顺序，仅用于系统</p>
+</blockquote>
+</li>
+<li>高级权限<blockquote>
+<p>android.permission.MTWEAK_USER<br>允许mTweak用户访问高级系统权限</p>
+</blockquote>
+</li>
+<li>社区权限<blockquote>
+<p>android.permission.MTWEAK_FORUM<br>允许使用mTweak社区权限</p>
+</blockquote>
+</li>
+<li>软格式化<blockquote>
+<p>android.permission.MASTER_CLEAR<br>允许程序执行软格式化，删除系统配置信息</p>
+</blockquote>
+</li>
+<li>修改声音设置<blockquote>
+<p>android.permission.MODIFY_AUDIO_SETTINGS<br>修改声音设置信息</p>
+</blockquote>
+</li>
+<li>修改电话状态<blockquote>
+<p>android.permission.MODIFY_PHONE_STATE<br>修改电话状态，如飞行模式，但不包含替换系统拨号器界面</p>
+</blockquote>
+</li>
+<li>格式化文件系统<blockquote>
+<p>android.permission.MOUNT_FORMAT_FILESYSTEMS<br>格式化可移动文件系统，比如格式化清空SD卡</p>
+</blockquote>
+</li>
+<li>挂载文件系统<blockquote>
+<p>android.permission.MOUNT_UNMOUNT_FILESYSTEMS<br>挂载、反挂载外部文件系统</p>
+</blockquote>
+</li>
+<li>允许NFC通讯<blockquote>
+<p>android.permission.NFC<br>允许程序执行NFC近距离通讯操作，用于移动支持</p>
+</blockquote>
+</li>
+<li>永久Activity<blockquote>
+<p>android.permission.PERSISTENT_ACTIVITY<br>创建一个永久的Activity，该功能标记为将来将被移除</p>
+</blockquote>
+</li>
+<li>处理拨出电话<blockquote>
+<p>android.permission.PROCESS_OUTGOING_CALLS<br>允许程序监视，修改或放弃播出电话</p>
+</blockquote>
+</li>
+<li>读取日程提醒<blockquote>
+<p>android.permission.READ_CALENDAR<br>允许程序读取用户的日程信息</p>
+</blockquote>
+</li>
+<li>读取联系人<blockquote>
+<p>android.permission.READ_CONTACTS<br>允许应用访问联系人通讯录信息</p>
+</blockquote>
+</li>
+<li>屏幕截图<blockquote>
+<p>android.permission.READ_FRAME_BUFFER<br>读取帧缓存用于屏幕截图</p>
+</blockquote>
+</li>
+<li>读取收藏夹和历史记录<blockquote>
+<p>com.android.browser.permission.READ_HISTORY_BOOKMARKS<br>读取浏览器收藏夹和历史记录</p>
+</blockquote>
+</li>
+<li>读取输入状态<blockquote>
+<p>android.permission.READ_INPUT_STATE<br>读取当前键的输入状态，仅用于系统</p>
+</blockquote>
+</li>
+<li>读取系统日志<blockquote>
+<p>android.permission.READ_LOGS<br>读取系统底层日志</p>
+</blockquote>
+</li>
+<li>读取电话状态<blockquote>
+<p>android.permission.READ_PHONE_STATE<br>访问电话状态</p>
+</blockquote>
+</li>
+<li>读取短信内容<blockquote>
+<p>android.permission.READ_SMS<br>读取短信内容</p>
+</blockquote>
+</li>
+<li>读取同步设置<blockquote>
+<p>android.permission.READ_SYNC_SETTINGS<br>读取同步设置，读取Google在线同步设置</p>
+</blockquote>
+</li>
+<li>读取同步状态<blockquote>
+<p>android.permission.READ_SYNC_STATS<br>读取同步状态，获得Google在线同步状态</p>
+</blockquote>
+</li>
+<li>重启设备<blockquote>
+<p>android.permission.REBOOT<br>允许程序重新启动设备</p>
+</blockquote>
+</li>
+<li>开机自动允许<blockquote>
+<p>android.permission.RECEIVE_BOOT_COMPLETED<br>允许程序开机自动运行</p>
+</blockquote>
+</li>
+<li>接收彩信<blockquote>
+<p>android.permission.RECEIVE_MMS<br>接收彩信</p>
+</blockquote>
+</li>
+<li>接收短信<blockquote>
+<p>android.permission.RECEIVE_SMS<br>接收短信</p>
+</blockquote>
+</li>
+<li>接收Wap Push<blockquote>
+<p>android.permission.RECEIVE_WAP_PUSH<br>接收WAP PUSH信息</p>
+</blockquote>
+</li>
+<li>录音<blockquote>
+<p>android.permission.RECORD_AUDIO<br>录制声音通过手机或耳机的麦克</p>
+</blockquote>
+</li>
+<li>排序系统任务<blockquote>
+<p>android.permission.REORDER_TASKS<br>重新排序系统Z轴运行中的任务</p>
+</blockquote>
+</li>
+<li>结束系统任务<blockquote>
+<p>android.permission.RESTART_PACKAGES<br>结束任务通过restartPackage(String)方法，该方- 式将在外来放弃</p>
+</blockquote>
+</li>
+<li>发送短信<blockquote>
+<p>android.permission.SEND_SMS<br>发送短信</p>
+</blockquote>
+</li>
+<li>设置Activity观察器<blockquote>
+<p>android.permission.SET_ACTIVITY_WATCHER<br>设置Activity观察器一般用于monkey测试</p>
+</blockquote>
+</li>
+<li>设置闹铃提醒<blockquote>
+<p>com.android.alarm.permission.SET_ALARM<br>设置闹铃提醒</p>
+</blockquote>
+</li>
+<li>设置总是退出<blockquote>
+<p>android.permission.SET_ALWAYS_FINISH<br>设置程序在后台是否总是退出</p>
+</blockquote>
+</li>
+<li>设置动画缩放<blockquote>
+<p>android.permission.SET_ANIMATION_SCALE<br>设置全局动画缩放</p>
+</blockquote>
+</li>
+<li>设置调试程序<blockquote>
+<p>android.permission.SET_DEBUG_APP<br>设置调试程序，一般用于开发</p>
+</blockquote>
+</li>
+<li>设置屏幕方向<blockquote>
+<p>android.permission.SET_ORIENTATION<br>设置屏幕方向为横屏或标准方式显示，不用于普通应用</p>
+</blockquote>
+</li>
+<li>设置应用参数<blockquote>
+<p>android.permission.SET_PREFERRED_APPLICATIONS<br>设置应用的参数，已不再工作具体查- 看addPackageToPreferred(String) 介绍</p>
+</blockquote>
+</li>
+<li>设置进程限制<blockquote>
+<p>android.permission.SET_PROCESS_LIMIT<br>允许程序设置最大的进程数量的限制</p>
+</blockquote>
+</li>
+<li>设置系统时间<blockquote>
+<p>android.permission.SET_TIME<br>设置系统时间</p>
+</blockquote>
+</li>
+<li>设置系统时区<blockquote>
+<p>android.permission.SET_TIME_ZONE<br>设置系统时区</p>
+</blockquote>
+</li>
+<li>设置桌面壁纸<blockquote>
+<p>android.permission.SET_WALLPAPER<br>设置桌面壁纸</p>
+</blockquote>
+</li>
+<li>设置壁纸建议<blockquote>
+<p>android.permission.SET_WALLPAPER_HINTS<br>设置壁纸建议</p>
+</blockquote>
+</li>
+<li>发送永久进程信号<blockquote>
+<p>android.permission.SIGNAL_PERSISTENT_PROCESSES<br>发送一个永久的进程信号</p>
+</blockquote>
+</li>
+<li>状态栏控制<blockquote>
+<p>android.permission.STATUS_BAR<br>允许程序打开、关闭、禁用状态栏</p>
+</blockquote>
+</li>
+<li>访问订阅内容<blockquote>
+<p>android.permission.SUBSCRIBED_FEEDS_READ<br>访问订阅信息的数据库</p>
+</blockquote>
+</li>
+<li>写入订阅内容<blockquote>
+<p>android.permission.SUBSCRIBED_FEEDS_WRITE<br>写入或修改订阅内容的数据库</p>
+</blockquote>
+</li>
+<li>显示系统窗口<blockquote>
+<p>android.permission.SYSTEM_ALERT_WINDOW<br>显示系统窗口</p>
+</blockquote>
+</li>
+<li>更新设备状态<blockquote>
+<p>android.permission.UPDATE_DEVICE_STATS<br>更新设备状态</p>
+</blockquote>
+</li>
+<li>使用证书<blockquote>
+<p>android.permission.USE_CREDENTIALS<br>允许程序请求验证从AccountManager</p>
+</blockquote>
+</li>
+<li>使用SIP视频<blockquote>
+<p>android.permission.USE_SIP<br>允许程序使用SIP视频服务</p>
+</blockquote>
+</li>
+<li>使用振动<blockquote>
+<p>android.permission.VIBRATE<br>允许振动</p>
+</blockquote>
+</li>
+<li>唤醒锁定<blockquote>
+<p>android.permission.WAKE_LOCK<br>允许程序在手机屏幕关闭后后台进程仍然运行</p>
+</blockquote>
+</li>
+<li>写入GPRS接入点设置<blockquote>
+<p>android.permission.WRITE_APN_SETTINGS<br>写入网络GPRS接入点设置</p>
+</blockquote>
+</li>
+<li>写入日程提醒<blockquote>
+<p>android.permission.WRITE_CALENDAR<br>写入日程，但不可读取</p>
+</blockquote>
+</li>
+<li>写入联系人<blockquote>
+<p>android.permission.WRITE_CONTACTS<br>写入联系人，但不可读取</p>
+</blockquote>
+</li>
+<li>写入外部存储<blockquote>
+<p>android.permission.WRITE_EXTERNAL_STORAGE<br>允许程序写入外部存储，如SD卡上写文件</p>
+</blockquote>
+</li>
+<li>写入Google地图数据<blockquote>
+<p>android.permission.WRITE_GSERVICES<br>允许程序写入Google Map服务数据</p>
+</blockquote>
+</li>
+<li>写入收藏夹和历史记录<blockquote>
+<p>com.android.browser.permission.WRITE_HISTORY_BOOKMARKS<br>写入浏览器历史记录或收藏夹，但不可读取</p>
+</blockquote>
+</li>
+<li>读写系统敏感设置<blockquote>
+<p>android.permission.WRITE_SECURE_SETTINGS<br>允许程序读写系统安全敏感的设置项</p>
+</blockquote>
+</li>
+<li>读写系统设置<blockquote>
+<p>android.permission.WRITE_SETTINGS<br>允许读写系统设置项</p>
+</blockquote>
+</li>
+<li>编写短信<blockquote>
+<p>android.permission.WRITE_SMS<br>允许编写短信</p>
+</blockquote>
+</li>
+<li>写入在线同步设置<blockquote>
+<p>android.permission.WRITE_SYNC_SETTINGS<br>写入Google在线同步设置</p>
+</blockquote>
+</li>
+</ul>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>Author: </strong>倪小白
+        </p>
+        <p>
+            <strong>
+                Permalink: 
+            </strong>
+            <a href="https://www.nixaiobai.com/2020/01/06/apk/">https://www.nixaiobai.com/2020/01/06/apk/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>updated at 2021-02-02</p></div> 
+    <div class="post-meta__cats"><a href="/tags/Android/" class="post-tags__link button"># Android</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2020/01/07/as/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            Android Studio依赖下载加速
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2019/12/27/java2kotlin/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            From Java To Kotlin - Your Cheat Sheet For Java To Kotlin
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    <div id="waline" class="waline_thread"></div>
+
+
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span> | </span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2019&nbsp;-&nbsp;2021 <a href="/">倪小白博客</a>
+        </p>
+    
+    
+        
+            <div style="text-align:center;"><a target="_blank" rel="noopener" href="http://www.beian.miit.gov.cn/">湘ICP备19025541号-1</a>&nbsp;<a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.nixiaobai.com/icon/upyun.png" height="30" width="59" /><a><br /><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43010302001025"><img src="https://i.nixiaobai.com/icon/beian.png" height="20" width="20" /><a><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43010302001025">湘公网安备 43010302001025号</a><a target="_blank" rel="noopener" href="https://www.nixiaobai.com/sitemap.xml"></a><a target="_blank" rel="noopener" href="https://www.nixiaobai.com/baidusitemap.xml"></a><a target="_blank" rel="noopener" href="https://www.nixiaobai.com/atom.xml"></a></div>
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?a75dd25724e2a046f341efe572714d33';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+  
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('true' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/2020/01/06/apk/');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = '92sgP9cHGaqMneRsjWf9Xrvw-gzGzoHsz';
+            var app_key = 'JL1uBvYPWqsMTl1YrzOCt02w';
+            var server_url = 'https://lean.nixiaobai.com';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('true'),
+            auto_fancybox = Boolean('false')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+     
+        <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+            
+                new Waline({
+                el: '#waline',
+                path: location.pathname,
+                serverURL: 'https://waline.nixiaobai.com',
+                avatar: 'retro',
+                placeholder:'富强、民主、文明、和谐、自由、平等、公正、法治，爱国、敬业、诚信、友善'
+                
+            });
+            
+            
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+ 
+
+
+
+
+
+    </body>
+</html>
