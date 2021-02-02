@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nixaiobai.com/2020/06/13/sheetHTML/</loc>
+    
+    <lastmod>2021-02-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.nixaiobai.com/2020/06/07/tac/</loc>
     
     <lastmod>2021-02-02</lastmod>
@@ -66,13 +73,6 @@
   
   <url>
     <loc>https://www.nixaiobai.com/2020/02/19/api/</loc>
-    
-    <lastmod>2021-02-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.nixaiobai.com/2020/06/13/sheetHTML/</loc>
     
     <lastmod>2021-02-02</lastmod>
     
@@ -250,13 +250,6 @@
   
   <url>
     <loc>https://www.nixaiobai.com/tags/javascript/</loc>
-    <lastmod>2021-02-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nixaiobai.com/tags/Codepen/</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

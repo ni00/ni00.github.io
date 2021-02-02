@@ -92,7 +92,7 @@
     <link href="https://www.nixaiobai.com/2020/06/13/sheetHTML/"/>
     <id>https://www.nixaiobai.com/2020/06/13/sheetHTML/</id>
     <published>2020-06-13T10:29:00.000Z</published>
-    <updated>2021-02-02T10:13:36.150Z</updated>
+    <updated>2021-02-02T10:21:40.811Z</updated>
     
     <content type="html"><![CDATA[<p>刚刚写来练手的纯js的DEMO<br>代码展示：<a href="https://codepen.io/nixiaobai/pen/LYGZGLL">CodePen</a></p><iframe height="265" style="width: 100%;" scrolling="no" title="LYGZGLL" src="https://codepen.io/nixiaobai/embed/LYGZGLL?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/nixiaobai/pen/LYGZGLL'>LYGZGLL</a> by 倪小白  (<a href='https://codepen.io/nixiaobai'>@nixiaobai</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>]]></content>
     
@@ -106,6 +106,8 @@
     
     
     
+    <category term="CodePen" scheme="https://www.nixaiobai.com/tags/CodePen/"/>
+    
     <category term="javascript" scheme="https://www.nixaiobai.com/tags/javascript/"/>
     
   </entry>
@@ -115,7 +117,7 @@
     <link href="https://www.nixaiobai.com/2020/06/07/tac/"/>
     <id>https://www.nixaiobai.com/2020/06/07/tac/</id>
     <published>2020-06-07T11:33:00.000Z</published>
-    <updated>2021-02-02T10:17:04.695Z</updated>
+    <updated>2021-02-02T10:21:08.878Z</updated>
     
     <content type="html"><![CDATA[<h1 id="井字棋"><a href="#井字棋" class="headerlink" title="井字棋"></a>井字棋</h1><p>css新拟态生成器：[Neumorphism][1]<br>代码展示：[CodePen][2]</p><iframe height="265" style="width: 100%;" scrolling="no" title="井字棋" src="https://codepen.io/nixiaobai/embed/RwrPBYe?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/nixiaobai/pen/RwrPBYe'>井字棋</a> by 倪小白  (<a href='https://codepen.io/nixiaobai'>@nixiaobai</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>  [1]: https://neumorphism.io/  [2]: https://codepen.io/nixiaobai/pen/RwrPBYe]]></content>
     
@@ -129,9 +131,9 @@
     
     
     
-    <category term="game" scheme="https://www.nixaiobai.com/tags/game/"/>
+    <category term="CodePen" scheme="https://www.nixaiobai.com/tags/CodePen/"/>
     
-    <category term="Codepen" scheme="https://www.nixaiobai.com/tags/Codepen/"/>
+    <category term="game" scheme="https://www.nixaiobai.com/tags/game/"/>
     
   </entry>
   
