@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.nixaiobai.com/2020/03/09/kotlin-spider/</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/search/index.html</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/tags/index.html</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/talk.html</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/friends/index.html</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/categories/index.html</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://www.nixaiobai.com/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://www.nixaiobai.com/tags/kotlin/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/tags/jsoup/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nixaiobai.com/tags/spider/</loc>
+    <lastmod>2021-02-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
