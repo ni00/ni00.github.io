@@ -142,7 +142,7 @@
     <link href="https://www.nixaiobai.com/2020/03/26/aiimage/"/>
     <id>https://www.nixaiobai.com/2020/03/26/aiimage/</id>
     <published>2020-03-26T12:30:00.000Z</published>
-    <updated>2021-02-02T10:12:54.785Z</updated>
+    <updated>2021-02-02T10:44:43.110Z</updated>
     
     <content type="html"><![CDATA[<h2 id="AIImage简介"><a href="#AIImage简介" class="headerlink" title="AIImage简介"></a>AIImage简介</h2><p>基于旷视 Face++ (<a href="https://www.faceplusplus.com.cn/">https://www.faceplusplus.com.cn</a>) 封装的python脚本。<br>纯python，注释清晰，语法简洁<br><a href="https://github.com/ni00/AIImage">Github</a><br><a href="https://ldkb.nixiaobai.com/file/AI%E6%99%BA%E8%83%BD%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86.zip">PC客户端</a></p><h2 id="使用指南"><a href="#使用指南" class="headerlink" title="使用指南"></a>使用指南</h2><p>请将main.py中api_key、api_secret填写完整,运行 main.py 即可使用<br><img src="http://image.nixiaobai.com/aiimage/2.png#vwid=1098&vhei=592" class="lazy" data-srcset="http://image.nixiaobai.com/aiimage/2.png#vwid=1098&vhei=592" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="截图1"><br><img src="http://image.nixiaobai.com/aiimage/1.jpg#vwid=1089&vhei=645" class="lazy" data-srcset="http://image.nixiaobai.com/aiimage/1.jpg#vwid=1089&vhei=645" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="截图2"></p><h2 id="项目列表如下："><a href="#项目列表如下：" class="headerlink" title="项目列表如下："></a>项目列表如下：</h2><p>detect.py</p><blockquote><p>获得面部关键点、年龄、性别、头部姿态、微笑检测、眼镜检测以及人脸质量等信息</p></blockquote><p>compare.py</p><blockquote><p>将两个人脸进行比对，来判断是否为同一个人，返回比对结果置信度和不同误识率下的阈值。</p></blockquote><p>search.py</p><blockquote><p>在一个图片中找出与目标人脸最相似的一张或多张人脸</p></blockquote><p>beautify.py</p><blockquote><p>对图片中人像进行对美颜美型处理，以及对图像增加滤镜等。美颜包括：美白和磨皮；美型包括：大眼、瘦脸、小脸和去眉毛等处理。</p></blockquote><p>facialfeatures.py</p><blockquote><p>根据单张正面人脸图片，分析人脸面部特征。</p></blockquote><p>skinanalyze.py</p><blockquote><p>对人脸图片，进行面部皮肤状态检测分析</p></blockquote><p>face_3d.py</p><blockquote><p>可根据单张或多张单人人脸图片，重建3D人脸效果。</p></blockquote><p>gesture.py</p><blockquote><p>检测图片中出现的所有的手部，并返回其在图片中的矩形框位置与相应的手势含义。目前可以识别 19 种手势。</p></blockquote><p>merge.py</p><blockquote><p>可以对模板图和融合图中的人脸进行融合操作。融合后的图片中将包含融合图中的人脸特征，以及模板图中的其他外貌特征与内容。</p></blockquote>]]></content>
     
@@ -155,7 +155,7 @@
     
     
     
-    <category term="ai" scheme="https://www.nixaiobai.com/tags/ai/"/>
+    <category term="AI" scheme="https://www.nixaiobai.com/tags/AI/"/>
     
     <category term="python" scheme="https://www.nixaiobai.com/tags/python/"/>
     
